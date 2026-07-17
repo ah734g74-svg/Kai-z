@@ -247,6 +247,7 @@ object CommonTools {
         WebDominanceTools.toolInfos +
         BlackLayerWebTools.toolInfos +
         UniversalTakeoverEngine.toolInfos +
+        AIPulseTool.toolInfos +
         listOf(memoryStoreToolInfo, memoryForgetToolInfo, memoryLearnToolInfo, memoryReinforceToolInfo) +
         SchedulingTools.schedulingToolDefinitions +
         HeartbeatTools.heartbeatToolDefinitions +

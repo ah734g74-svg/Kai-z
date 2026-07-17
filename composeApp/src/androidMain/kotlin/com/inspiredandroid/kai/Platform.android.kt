@@ -54,6 +54,7 @@ import com.inspiredandroid.kai.tools.ShellCommandTool
 import com.inspiredandroid.kai.tools.SmsTools
 import com.inspiredandroid.kai.tools.SshConfigureHostTool
 import com.inspiredandroid.kai.tools.HackingTools
+import com.inspiredandroid.kai.tools.AIPulseTool
 import com.inspiredandroid.kai.tools.WebSearchTool
 import com.russhwolf.settings.BuildConfig
 import com.russhwolf.settings.Settings
@@ -463,6 +464,11 @@ actual fun getAvailableTools(): List<Tool> {
         UniversalTakeoverEngine.tools.forEach { uniTool ->
             if (appSettings.isToolEnabled(uniTool.schema.name)) {
                 add(uniTool)
+            }
+        }
+        AIPulseTool.tools.forEach { aiPulseTool ->
+            if (appSettings.isToolEnabled(aiPulseTool.schema.name)) {
+                add(aiPulseTool)
             }
         }
 
